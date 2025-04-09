@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/desktop.css">
+    <script defer type="module" src="/javascript/script.js"></script>
+</head>
+<body>
+    <main class="conteudo">
+        <!-- Conteúdo Normal -->
+        <div class="conteudo__normal">
+            <!-- Conteúdo da Imagem -->
+            <div class="img__inicial"></div>
+
+            <!-- Conteúdo do Texto Inicial -->
+             <div class="conteudo__escrito">
+                <section class="conteudo__texto">
+                    <div class="texto__inicial">
+                        <h1 class="inicial__titulo">Stay updated!</h1>
+                        <p class="inicial__paragrafo">Join 60,000+ product managers receiving monthly updates on:</p>
+                    </div>
+
+                    <!-- Conteúdo da Lista -->
+                    <div class="conteudo__lista">
+                        <div class="lista__item">
+                            <img class="lista__img" src="/img/icon-list.svg" alt="Ícone da Lista">
+                            <p class="lista__texto">Product discovery and building what matters</p>
+                        </div>
+
+                        <div class="lista__item">
+                            <img class="lista__img" src="/img/icon-list.svg" alt="Ícone da Lista">
+                            <p class="lista__texto">Measuring to ensure updates are a sucess</p>
+                        </div>
+
+                        <div class="lista__item">
+                            <img class="lista__img" src="/img/icon-list.svg" alt="Ícone da Lista">
+                            <p class="lista__texto">And much more!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conteúdo do Cadastro -->
+                <section class="conteudo__cadastro">
+
+                    <!-- E-mail para Cadastro -->
+                    <div class="cadastro__texto">
+                        <p class="texto__normal">Email address</p>
+                        <p class="texto__active">Valid email required</p>
+                    </div>
+
+                    <!-- E-mail e Botão de Submit -->
+                    <form class="cadastro__input">
+                        <input type="text" name="cad__email" id="cad__email" placeholder="email@company.com">
+
+                        <!-- <button type="submit" id="cad__botao">Subscribe to monthly newsletter</button> -->
+                        <input type="submit" value="Subscribe to monthly newsletter" name="cad__botao" id="cad__botao">
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <!-- Conteúdo Active -->
+        <section class="msg__sucess">
+            <div class="sucess__active">
+                <img class="active__img" src="/img/icon-success.svg" alt="Ícone de Checked Sucesso">
+                <h2 class="active__titulo">Thanks for subscribing!</h2>
+                <p class="active__paragrafo"></p>
+            </div>
+
+            <div class="sucess__btn">
+                <button class="btn__dismiss">Dismiss message</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Importação */
+@import url(/css/variaveis.css);
+
+/* Estilização Tablet */
+
+@media screen and (min-width: 23.46rem) and (max-width: 48rem) {
+    body {
+        font-family: var(--roboto);
+        font-size: 1rem;
+        color: var(--blue-800);
+        background-color: var(--blue-700);
+        margin: 3.1rem 5rem;
+    }
+
+    /* Estilização Página Inicial */
+    .conteudo__normal {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        width: 33.0rem;
+        background-color: var(--white);
+        padding: 40px 40px;
+        border-radius: 36px;
+    }
+
+    .img__inicial {
+        background-image: url(/img/illustration-sign-up-tablet.jpg);
+        height: 22.5rem;
+    }
+
+    .conteudo__texto {
+        padding: 2.5rem 0rem;
+    }
+
+    .texto__inicial {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .inicial__titulo {
+        font-size: 3.5rem;
+        line-height: 100%;
+        font-weight: 600;
+        color: var(--blue-800);
+    }
+
+    .inicial__paragrafo {
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+        line-height: 150%;
+        color: var(--blue-800);
+    }
+
+    .conteudo__lista {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .lista__item {
+        display: flex;
+        gap: 1.5rem;
+        align-items: start;
+        color: var(--blue-800);
+    }
+
+    .lista__item img {
+        width: 1.2rem;
+    }
+
+    .conteudo__cadastro {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .lista__texto {
+        line-height: 150%;
+    }
+
+    .cadastro__texto {
+        display: flex;
+        justify-content: space-between;
+        color: var(--blue-800);
+        font-size: .75rem;
+        font-weight: 600;
+    }
+
+    .texto__normal {
+        color: var(--blue-800);
+    }
+
+    .texto__active {
+        color: var(--red);
+        display: none;
+    }
+
+    .cadastro__input {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #cad__email {
+        padding: 1rem 1.5rem;
+        border: .063rem solid var(--grey);
+        border-radius: .5rem;
+        color: var(--blue-800);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    b {
+        font-weight: 600;
+    }
+
+    #cad__email::placeholder {
+        color: var(--grey);
+        font-weight: 400;
+    }
+
+    #cad__email:focus {
+        border: .099rem solid var(--blue-800);
+    }
+
+    #cad__email.error {
+        border-color: var(--red);
+        color: var(--red);
+        background-color: rgba(255, 97, 85, 0.1);
+    }
+
+    #cad__botao {
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: var(--blue-800);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+    }
+    
+    /* Estilização Página de Sucesso para Cadastro */
+    .msg__sucess {
+        display: none;
+        margin: 15.75rem 0rem;
+        margin-left: 3.5rem;
+        padding: 4rem 3.75rem;
+        background-color: var(--white);
+        border-radius: 1.5rem;
+        width: 23.5rem;
+    }
+
+    .sucess__active {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sucess__active img {
+        width: 4rem;
+    }
+
+    .active__titulo {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: var(--blue-800);
+    }
+
+    .active__paragrafo {
+        line-height: 150%;
+        padding-bottom: 3rem;
+    }
+
+    .btn__dismiss {
+        padding: 1rem 6.7rem;
+        border: none;
+        border-radius: .5rem;
+        color: var(--white);
+        line-height: 150%;
+        font-weight: 600;
+        background-color: var(--blue-800);
+        width: 23.5rem;
+    }
+}
